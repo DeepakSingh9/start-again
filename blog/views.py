@@ -7,4 +7,4 @@ from .models import Post
 
 def post_list(request):
     post=Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request,'template/blog/git blog_list.html',{})
+    return render(request,'template/blog/git blog_list.html'
